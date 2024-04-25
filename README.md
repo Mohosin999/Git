@@ -91,3 +91,7 @@ akhon ami akbar pisone geci, samne aschi "git log" kintu ai history gulo dekhabe
 ```javascript
 git reflog
 ```
+
+tarmane reflog sudhu matro je log dey tana, ati git er somosto commited histry addopanto shoho diye dey.
+
+[Note] kuno commit ke akebare delete na kore dewatai valo
