@@ -108,4 +108,16 @@ aita korle file ta delete hoye jabe but sei file ta akhono giter tracking er mod
 git commit -m "deleted file"
 ```
 
-akhon ata giter tracking thekeo/ giter database thekeo delete hoye gece.
+akhon ata giter tracking thekeo and giter database thekeo delete hoye gece.
+
+\*\* আমি যদি একটা ফাইলকে ডিলিট না করে Untracked অবস্থায় আনতে চাই তাহলে লিখতে হবে -
+
+```javascript
+git rm --cached filename
+```
+
+[confusion] তাহলে 'গিট আরএম ফাইলনাম' এবং 'গিট আরএম -- ক্যাশেড ফাইলের নাম' এর মধ্যে পার্থক্য কী?
+
+= আমরা যখন **`git rm filename`** করেছি তখন ফাইলটা ডিলিট হয়ে গিয়েছিল, কিন্তু শুধুমাত্র সেটা গিটের tracking-এ রয়ে গিয়েছিল । সেই tracking থেকে সরাতে আমাদের extra একটা commit করতে হয়েছিল । আর আমরা যখন **`git rm --cached filename`** করলাম তখন ফাইলটা ডিলিট হলো না, শুধুমাত্র গিটের tracking থেকে বেরিয়ে আসলো ।
+
+### Branching
