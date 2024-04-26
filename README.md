@@ -95,3 +95,17 @@ git reflog
 tarmane reflog sudhu matro je log dey tana, ati git er somosto commited histry addopanto shoho diye dey.
 
 [Note] kuno commit ke akebare delete na kore dewatai valo
+
+\*\* kuno akta file ke delete korar jonne likhte pare
+
+```javascript
+git rm filename
+```
+
+aita korle file ta delete hoye jabe but sei file ta akhono giter tracking er moddhe ace, giter database e akhono file ta maintion ee ace. ami jodi akhon atake akebare delete kore dite chai giter database thekeo tahole amader akta commit korte hobe
+
+```javascript
+git commit -m "deleted file"
+```
+
+akhon ata giter tracking thekeo/ giter database thekeo delete hoye gece.
