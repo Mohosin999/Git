@@ -120,4 +120,38 @@ git rm --cached filename
 
 = আমরা যখন **`git rm filename`** করেছি তখন ফাইলটা ডিলিট হয়ে গিয়েছিল, কিন্তু শুধুমাত্র সেটা গিটের tracking-এ রয়ে গিয়েছিল । সেই tracking থেকে সরাতে আমাদের extra একটা commit করতে হয়েছিল । আর আমরা যখন **`git rm --cached filename`** করলাম তখন ফাইলটা ডিলিট হলো না, শুধুমাত্র গিটের tracking থেকে বেরিয়ে আসলো ।
 
-### Branching
+## Branching
+
+একাধিক ডেভলপার একসাথে কাজ করার জন্য Branching এর কনসেপ্ট টা খুবই জরুরি ।
+
+### আমরা কোন ব্রাঞ্চে আছি সেটা জানতে চাই তাহলে লিখতে হবে
+
+```javascript
+git branch
+```
+
+### আমরা যদি কোন Branch তৈরি করতে চাই তাহলে লিখতে হবে
+
+```javascript
+git branch feature/add-contributing-file
+```
+
+[Note]: ব্রাঞ্চ তৈরি করার ক্ষেত্রে কিছু নেমিং কনভেনশন মানাটা খুবই জরুরি । যদি Bug Fix এর জন্য কোন একটা ব্রাঞ্চ তৈরি করি তবে সেটার নাম রাখতে পারি **`bugFix/bugNumber or bugName`**, যদি Feature তৈরি করার জন্য কোন একটা ব্রাঞ্চ তৈরি করি তবে সেটার নাম রাখতে পারি **`feature/featureName`**, development কাজ করার জন্য কোন ব্রাঞ্চ তৈরি করলে সেটার নাম রাখতে পারি **`dev/something`** ।
+
+### একটা ব্রাঞ্চ থেকে অন্য একটা ব্রাঞ্চে যাওয়ার জন্য আমাদের লিখতে হবে
+
+```javascript
+git switch branchName
+```
+
+Another alternative command is -
+
+```javascript
+git checkout branchName
+```
+
+### কোন একটা ব্রাঞ্চ-কে Rename করার জন্য আমাদের লিখতে হবে (Rename করার জন্য অবশ্যই সেই ব্রাঞ্চে থাকতে হবে)
+
+```javascript
+git branch -m newBranchName
+```
