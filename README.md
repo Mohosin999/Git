@@ -156,7 +156,11 @@ git checkout branchName
 git branch -m newBranchName
 ```
 
-### akhon amra duto branch create korbo and ata simulate korbo je duto branch ee duto user kaj korce, tarpor tara ake oporer change kivabe nebe ( lets talk about marge , reverse )
+### kuno akta branch delete korar duita upai ace 'git branch -d branchName' and 'git branch -D branchName', jodi small -d dei tobe oi branch er moddhe jodi kuno unmerge changes thake tobe -d sei unmerge changes er jonne sei branch ke delete korte dibe na. so always use -d to delete a brach. jodi -D use kora hoy tobe se kiccu chinta na kore sei brach ke delete kore dibe jeta maje maje developer der jonne afcos er karon hote pare.
+
+## Merge
+
+### akhon amra duto branch create korbo and ata simulate korbo je duto branch ee duto user kaj korce, tarpor tara ake oporer change kivabe nebe ( lets talk about merge , reverse )
 
 amra akta branch create kori "dev/Akash" name and akta file create kori 'devAkash.md' name and kisu text add kori. add kore segulo ke git er tracking ee pathiye amra amader main branch ee fire jai, akhon amra chacce 'dev/Akash' brach er file ta amader main file ee ante, setar jonne amra 'merge' korte pari
 
@@ -165,3 +169,7 @@ first amk akta branch e jete hobe jekhane ami marge korte chai, tarpor 'git merg
 ```javascript
 git merge branchName
 ```
+
+### Merge Conflict
+
+seems we have two branch named "dev/akash" and "dev/rasel"
