@@ -1,4 +1,4 @@
-# Git and GitHub with All Concepts🔥
+# Git with All Concepts🔥
 
 ## 🧠Some Terminology
 
@@ -138,7 +138,9 @@ git branch feature/add-contributing-file
 
 [Note]: ব্রাঞ্চ তৈরি করার ক্ষেত্রে কিছু নেমিং কনভেনশন মানাটা খুবই জরুরি । যদি Bug Fix এর জন্য কোন একটা ব্রাঞ্চ তৈরি করি তবে সেটার নাম রাখতে পারি **`bugFix/bugNumber or bugName`**, যদি Feature তৈরি করার জন্য কোন একটা ব্রাঞ্চ তৈরি করি তবে সেটার নাম রাখতে পারি **`feature/featureName`**, development কাজ করার জন্য কোন ব্রাঞ্চ তৈরি করলে সেটার নাম রাখতে পারি **`dev/something`** ।
 
-### amra jodi amon akta branch create korte chai jei branch ta faka hobe na, onno akta branch theke information niye create hobe sekhetre likhte pari 'git checkout -b toBranch fromBranch'
+### amra jodi amon akta branch create korte chai jei branch ta faka hobe na, onno akta branch theke information niye create hobe sekhetre likhte pari 'git checkout -b toBranch fromBranch', ar jodi amra already fromBranch eei thaki tahole likhbo 'git checkout -b toBranch'
+
+here toBranch is NOTUn jei branch ta amra create korbo tar nam.
 
 ### একটা ব্রাঞ্চ থেকে অন্য একটা ব্রাঞ্চে যাওয়ার জন্য আমাদের লিখতে হবে
 
@@ -179,3 +181,35 @@ amra duita branch create kori 'akash' and 'rasel' name. akhon amader main branch
 aikhane amra akash and rasel branch ee akoi line e akoi jaigai duijone changes kreci, akhon jodi amra chai rasel branch e je changes hoyece seta akash branch eo lagbe, tahole amra akash branch ee jabo and likhbo 'git merge rasel'. aita likhe enter korle amra dekhte parbo amader merge conflict hoyece jete changes almost same jaigai cilo. do the changes manually.
 
 ![Merge_Conflict](./img/merge_conflict.png)
+
+## git stash ( save over save )
+
+dori amra akta branch ee kaj kortaci, akhon amk jodi immidietly onno arekta branch ee jete hoy tahole amader ki korte hobe? git stage, commit korte then onno branch ee jete hobe. but amra git stash use kore current branch ee commit na korei onno brach ee jete pari. let's see
+
+amra jodi kuno tracked file ke stash korte chai then likhbo
+
+```javascript
+git stash
+```
+
+ar jodi kuno untracked file ke stash korte chai then likhbo
+
+```javascript
+git stash -u
+```
+
+amra ki ki stash koreci seta jodi dekhte chai tobe likhbo
+
+```javascript
+git stash list
+```
+
+amra kuno ak branch ee stash korle sei stash kora info gulo ke onno akta branch eo apply korte pari, tar jonne likhbo
+
+```javascript
+git stash apply
+```
+
+git stash pop korle ki hobe?
+
+private brach er khete reverse is good, but public project er khetre always git merge.
