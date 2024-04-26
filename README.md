@@ -172,4 +172,4 @@ git merge branchName
 
 ### Merge Conflict
 
-seems we have two branch named "dev/akash" and "dev/rasel"
+amra duita branch create kori 'akash' and 'rasel' name. akhon amader main branch ee file.md name akta file ace jetate likha ace 'My name is - '. akhon amra akash branch ee giye ai khane likhbo my namae is akash, and rasel branch ee giye likhbo my name is rasel. let's do it.
