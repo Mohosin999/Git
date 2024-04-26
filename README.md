@@ -144,7 +144,7 @@ git branch feature/add-contributing-file
 git switch branchName
 ```
 
-Another alternative command is -
+**আরেকটা বিকল্প Command হলো**
 
 ```javascript
 git checkout branchName
@@ -154,4 +154,14 @@ git checkout branchName
 
 ```javascript
 git branch -m newBranchName
+```
+
+### akhon amra duto branch create korbo and ata simulate korbo je duto branch ee duto user kaj korce, tarpor tara ake oporer change kivabe nebe ( lets talk about marge , reverse )
+
+amra akta branch create kori "dev/Akash" name and akta file create kori 'devAkash.md' name and kisu text add kori. add kore segulo ke git er tracking ee pathiye amra amader main branch ee fire jai, akhon amra chacce 'dev/Akash' brach er file ta amader main file ee ante, setar jonne amra 'merge' korte pari
+
+first amk akta branch e jete hobe jekhane ami marge korte chai, tarpor 'git merge branchname' amk akta branch name dite hobe jekhan theke ami marge korte chai
+
+```javascript
+git merge branchName
 ```
