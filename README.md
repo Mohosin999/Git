@@ -146,7 +146,7 @@ git branch feature/add-contributing-file
 git checkout -b toBranch fromBranch
 ```
 
-### আর যদি আমরা already fromBranch ব্রাঞ্চ-এ থাকি তাহলে লিখবো:
+### আর যদি আমরা already fromBranch ব্রাঞ্চে থাকি তাহলে লিখবো:
 
 ```javascript
 git checkout -b toBranch
@@ -172,52 +172,63 @@ git checkout branchName
 git branch -m newBranchName
 ```
 
-### kuno akta branch delete korar duita upai ace 'git branch -d branchName' and 'git branch -D branchName', jodi small -d dei tobe oi branch er moddhe jodi kuno unmerge changes thake tobe -d sei unmerge changes er jonne sei branch ke delete korte dibe na. so always use -d to delete a brach. jodi -D use kora hoy tobe se kiccu chinta na kore sei brach ke delete kore dibe jeta maje maje developer der jonne afcos er karon hote pare.
+### কোন একটা ব্রাঞ্চ delete করার দুইটা উপায় হলো:
+
+```javascript
+git branch -d branchName
+```
+
+ছোট **`d`** এর মানে হলো, যদি ওই ব্রাঞ্চে কোন unmerge changes থাকে তবে সে ওই ব্রাঞ্চকে ডিলিট করতে দিবে না । ( try to always use it )
+
+এবং
+
+```javascript
+git branch -D branchName
+```
+
+বড় **`D`** এর মানে হলো, সে কোন কিছু চিন্তা না করেই ওই ব্রাঞ্চকে ডিলিট করে দিবে ।
 
 ## 🧃Merge
 
-### akhon amra duto branch create korbo and ata simulate korbo je duto branch ee duto user kaj korce, tarpor tara ake oporer change kivabe nebe ( lets talk about merge , reverse )
+আমরা এখন দেখবো যে দুইজন ডেভেলপার দুইটি ভিন্ন ব্রাঞ্চে কাজ করার পর কিভাবে তারা একে অপরের change গুলো নেয় ।
 
-amra akta branch create kori "dev/Akash" name and akta file create kori 'devAkash.md' name and kisu text add kori. add kore segulo ke git er tracking ee pathiye amra amader main branch ee fire jai, akhon amra chacce 'dev/Akash' brach er file ta amader main file ee ante, setar jonne amra 'merge' korte pari
-
-first amk akta branch e jete hobe jekhane ami marge korte chai, tarpor 'git merge branchname' amk akta branch name dite hobe jekhan theke ami marge korte chai
+### আমাদের একটা ব্রাঞ্চে থাকতে হবে যে ব্রাঞ্চে আমি অন্য ব্রাঞ্চ থেকে চেন্জগুলো আনতে চাই, তারপর লিখতে হবে:
 
 ```javascript
 git merge branchName
 ```
 
+এখানে branchName হবে যে ব্রাঞ্চ থেকে চেন্জগুলো আসবে ।
+
 ### Merge Conflict
 
-amra duita branch create kori 'akash' and 'rasel' name. akhon amader main branch ee file.md name akta file ace jetate likha ace 'My name is - '. akhon amra akash branch ee giye ai khane likhbo my namae is akash, and rasel branch ee giye likhbo my name is rasel. let's do it.
-
-aikhane amra akash and rasel branch ee akoi line e akoi jaigai duijone changes kreci, akhon jodi amra chai rasel branch e je changes hoyece seta akash branch eo lagbe, tahole amra akash branch ee jabo and likhbo 'git merge rasel'. aita likhe enter korle amra dekhte parbo amader merge conflict hoyece jete changes almost same jaigai cilo. do the changes manually.
+কখনো কখনো একাধিক ডেভেলপার একই কোডে কাজ করার ফলে Merge Conflict ঘটে, এগুলোকে একজন ডেভেলপারের চাহিদা অনুযায়ী বুজেশুনে সমাধান করতে হবে ।
 
 ![Merge_Conflict](./img/merge_conflict.png)
 
 ## ⛅Stash
 
-( save over save )
-dori amra akta branch ee kaj kortaci, akhon amk jodi immidietly onno arekta branch ee jete hoy tahole amader ki korte hobe? git stage, commit korte then onno branch ee jete hobe. but amra git stash use kore current branch ee commit na korei onno brach ee jete pari. let's see
+Stash মানে হলো save over save. মনে করেন, আমরা একটা ব্রাঞ্চে কাজ করছি । এখন যদি আমাদের জরুরি ভিত্তিতে অন্য একটা ব্রাঞ্চে যেতে হয় তাহলে কি করতে হবে? অবশ্যই যতটুকু কাজ করেছি তা কমেন্ট করে যেতে হবে, কমেন্ট করা ছাড়া কিন্তু আমরা যেতে পারবো না । কিন্তু আমরা নিচের কমান্ড ব্যবহার করে current ব্রাঞ্চে কমেন্ট না করেই অন্য ব্রাঞ্চে যেতে পারি ।
 
-amra jodi kuno tracked file ke stash korte chai then likhbo
+### আমরা যদি কোন tracked ফাইলকে stash করতে চাই:
 
 ```javascript
 git stash
 ```
 
-ar jodi kuno untracked file ke stash korte chai then likhbo
+### আর আমরা যদি কোন untracked ফাইলকে stash করতে চাই:
 
 ```javascript
 git stash -u
 ```
 
-amra ki ki stash koreci seta jodi dekhte chai tobe likhbo
+### আমরা কি কি stash করেছি সেটা যদি দেখতে চাই:
 
 ```javascript
 git stash list
 ```
 
-amra kuno ak branch ee stash korle sei stash kora info gulo ke onno akta branch eo apply korte pari, tar jonne likhbo
+### আমরা কোন একটা ব্রাঞ্চে stash করলে সেই stash করা informations গুলো অন্য একটা ব্রাঞ্চে apply করার জন্যে লিখবো:
 
 ```javascript
 git stash apply
