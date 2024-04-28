@@ -2,11 +2,11 @@
 
 ## 📚Table of Content
 
-- [Some Terminology](#🧠some-terminology)
+- [Some Terminology](#-some-terminology)
 - [Important Commands](#🍦important-commands)
 - [Branching](#🌲branching)
-- [Merge](#🧃merge)
-- [Stash](#⛅stash)
+- [Merge](#-merge)
+- [Stash](#stash)
 
 ## 🧠Some Terminology
 
