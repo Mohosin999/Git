@@ -1,4 +1,12 @@
-# Git with All Concepts🔥
+# All About Git🔥
+
+## 📚Table of Content
+
+- [Some Terminology](#🧠some-terminology)
+- [Important Commands](#🍦important-commands)
+- [Branching](#🌲branching)
+- [Merge](#🧃merge)
+- [Stash](#⛅stash)
 
 ## 🧠Some Terminology
 
@@ -118,7 +126,7 @@ git rm --cached filename
 
 = আমরা যখন **`git rm filename`** করেছি তখন ফাইলটা ডিলিট হয়ে গিয়েছিল, কিন্তু শুধুমাত্র সেটা গিটের tracking-এ রয়ে গিয়েছিল । সেই tracking থেকে সরাতে আমাদের extra একটা commit করতে হয়েছিল । আর আমরা যখন **`git rm --cached filename`** করলাম তখন ফাইলটা ডিলিট হলো না, শুধুমাত্র গিটের tracking থেকে বেরিয়ে আসলো ।
 
-## Branching
+## 🌲Branching
 
 একাধিক ডেভলপার একসাথে কাজ করার জন্য Branching এর কনসেপ্ট টা খুবই জরুরি ।
 
@@ -160,7 +168,7 @@ git branch -m newBranchName
 
 ### kuno akta branch delete korar duita upai ace 'git branch -d branchName' and 'git branch -D branchName', jodi small -d dei tobe oi branch er moddhe jodi kuno unmerge changes thake tobe -d sei unmerge changes er jonne sei branch ke delete korte dibe na. so always use -d to delete a brach. jodi -D use kora hoy tobe se kiccu chinta na kore sei brach ke delete kore dibe jeta maje maje developer der jonne afcos er karon hote pare.
 
-## Merge
+## 🧃Merge
 
 ### akhon amra duto branch create korbo and ata simulate korbo je duto branch ee duto user kaj korce, tarpor tara ake oporer change kivabe nebe ( lets talk about merge , reverse )
 
@@ -180,8 +188,9 @@ aikhane amra akash and rasel branch ee akoi line e akoi jaigai duijone changes k
 
 ![Merge_Conflict](./img/merge_conflict.png)
 
-## git stash ( save over save )
+## ⛅Stash
 
+( save over save )
 dori amra akta branch ee kaj kortaci, akhon amk jodi immidietly onno arekta branch ee jete hoy tahole amader ki korte hobe? git stage, commit korte then onno branch ee jete hobe. but amra git stash use kore current branch ee commit na korei onno brach ee jete pari. let's see
 
 amra jodi kuno tracked file ke stash korte chai then likhbo
