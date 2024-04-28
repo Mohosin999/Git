@@ -68,9 +68,7 @@ git log
 git log --oneline
 ```
 
-### Most Important Command
-
-kew jodi tar current commit theke niddristo akta commit ee fire jete chay and current commit take na chay, thaole take likhte hobe
+#### কেউ যদি তার current কমেন্ট থেকে নির্দিষ্ট একটা কমেন্টে ফিরে যেতে চাই এবং current কমেন্টটাকে না চাই তবে লিখতে হবে
 
 ```javascript
 git reset --hard commitID //( commitID - where you want to go )
