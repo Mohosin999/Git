@@ -234,6 +234,4 @@ git stash list
 git stash apply
 ```
 
-git stash pop korle ki hobe?
-
-private brach er khete reverse is good, but public project er khetre always git merge.
+# The End
