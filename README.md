@@ -60,7 +60,9 @@ git commit -m "give here your commit message"
 git log
 ```
 
-amader jodi 50 ta commit thake "git log" lekhar sathe sathe sob gulo amader diye dibe. but amader jodi commit id and commit message ta dorkar hoy amra setao pete pari "git log --oneline" er maddhome
+আমাদের যদি 50 টা অথবা ১০০ টা কমেন্টও এখানে থাকে, **`git log`** লেখার মাধ্যমে আমাদের সবগুলো কমেন্ট দিয়ে দিবে ।
+
+#### আমরা যদি শুধুমাত্র কমেন্ট আইডি এবং কমেন্ট মেসেজগুলোকে এক লাইনে চাই তবে লিখব:
 
 ```javascript
 git log --oneline
