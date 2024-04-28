@@ -46,19 +46,15 @@ git add .
 
 **[Note]:** আমি যদি আমার current ডিরেক্টরির root-এ গিয়ে **`git add .`** এবং **`git add --all`** লিখি, দুইটাই এক্ষেত্রে same হবে ।
 
-ai kaj gulo korle file ta git er track e chole jai, but ai fileta akhono local repositorir ayotte ase ni. seta korar jonne amader commit korte hobe.
+এই কাজগুলো করার মাধ্যমে একটি ফাইল গিটের ট্র্যাকিংয়ে চলে যায় । কিন্তু ফাইলটা এখনো লোকাল রিপোজিটরির আয়ত্তে আসেনি, সেটা করার জন্য আমাদের কমেন্ট করতে হবে । কমেন্ট করলে একটা ইউনিক আইডি জেনারেট হয় যেটাকে বলা হয় commit Id. পরবর্তীতে আমরা এই আইডি ধরে পূর্বের কোডগুলোতে যেতে পারবো অথবা পরবর্তী কোড গুলোতে যেতে পারবো । **মনে রাখতে হবে, কমেন্ট করার আগ পর্যন্ত আমরা আমাদের ওয়ার্কিং ডিরেক্টরীতেই আছি । কমেন্ট করার পর আমরা লোকাল ডিপোজিটরিতে যেতে পারবো বা এর অংশ হব**
 
-commit korle akta specifiq uniq id generate hoy jetake bola hoy commit id. next ee ai id dore amra previos code ee back korte parbo ba next code ee jete parbo.
-
-Remember this, commit korar ag porjonto amra amader working directory tei aci, committ korar por amra local repository te jete parbo.
-
-let's commit -
+#### কিভাবে কমেন্ট করতে হয়?
 
 ```javascript
-git commit -m "created main.js file successflly"
+git commit -m "give here your commit message"
 ```
 
-oneke aksathe kaj korle or ami jodi amr previous kajer history gulo dekhte chai then akta command khub help korbe seta holo "git log", ami jodi dekhte chai onno ra aikhane ki kaj korece amar age "git log" er maddhome ami sob sundor vabe dekhte parbo
+#### আমার পূর্বের কাজের হিস্টরি গুলো দেখতে অথবা অন্যরা এখানে আমার আগে কি কাজ করেছে সেটা দেখতে লিখব:
 
 ```javascript
 git log
