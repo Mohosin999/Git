@@ -2,10 +2,10 @@
 
 ## 📚Table of Content
 
-- [Some Terminology](#-some-terminology)
-- [Important Commands](#🍦important-commands)
-- [Branching](#🌲branching)
-- [Merge](#-merge)
+- [Some Terminology](#some-terminology)
+- [Important Commands](#important-commands)
+- [Branching](#branching)
+- [Merge](#merge)
 - [Stash](#stash)
 
 ## 🧠Some Terminology
@@ -23,7 +23,7 @@
 ### কিভাবে একটি ফাইল তৈরি করতে হয়?
 
 ```javascript
-touch main.js
+touch filename
 ```
 
 ### একটি ফাইল বা ফোল্ডারের বর্তমান পরিস্থিতি জানতে:
@@ -234,4 +234,4 @@ git stash list
 git stash apply
 ```
 
-# The End
+# 🔚The End
